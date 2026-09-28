@@ -6,226 +6,211 @@ import { Patient } from "../models/patient.model.js";
 
 const patients = [
   {
-    patientCode: "BN000001",
-    fullName: "Nguyễn Văn An",
-    dateOfBirth: new Date("1985-03-12"),
-    gender: "MALE",
-    phone: "0901000001",
-    address: "Rạch Giá, An Giang",
-    emergencyContact: {
-      fullName: "Trần Thị Lan",
-      phone: "0901000101",
-      relationship: "Vợ",
+    "patientCode": "BN000036",
+    "fullName": "Nguyễn Hoàng Phúc",
+    "dateOfBirth": "1996-04-12T00:00:00.000Z",
+    "gender": "MALE",
+    "phone": "0918414011",
+    "address": "Rạch Giá, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Nguyễn Thị Hoa",
+      "phone": "0918414111",
+      "relationship": "2"
     },
+    "createdAt": "2026-05-05T08:30:00.000Z",
+    "updatedAt": "2026-05-05T08:30:00.000Z"
   },
   {
-    patientCode: "BN000002",
-    fullName: "Trần Thị Mai",
-    dateOfBirth: new Date("1990-07-25"),
-    gender: "FEMALE",
-    phone: "0901000002",
-    address: "Châu Thành, An Giang",
-    emergencyContact: {
-      fullName: "Nguyễn Văn Hùng",
-      phone: "0901000102",
-      relationship: "Chồng",
+    "patientCode": "BN000037",
+    "fullName": "Trần Minh Khang",
+    "dateOfBirth": "2002-08-19T00:00:00.000Z",
+    "gender": "MALE",
+    "phone": "0918414012",
+    "address": "Rạch Giá, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Trần Thị Lan",
+      "phone": "0918414112",
+      "relationship": "2"
     },
+    "createdAt": "2026-05-17T10:15:00.000Z",
+    "updatedAt": "2026-05-17T10:15:00.000Z"
   },
   {
-    patientCode: "BN000003",
-    fullName: "Lê Văn Bình",
-    dateOfBirth: new Date("1978-11-08"),
-    gender: "MALE",
-    phone: "0901000003",
-    address: "Long Xuyên, An Giang",
-    emergencyContact: {
-      fullName: "Lê Thị Hoa",
-      phone: "0901000103",
-      relationship: "Vợ",
+    "patientCode": "BN000038",
+    "fullName": "Lê Thị Ngọc",
+    "dateOfBirth": "1994-03-25T00:00:00.000Z",
+    "gender": "FEMALE",
+    "phone": "0918414013",
+    "address": "Châu Thành, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Lê Văn Hùng",
+      "phone": "0918414113",
+      "relationship": "1"
     },
+    "createdAt": "2026-05-28T14:45:00.000Z",
+    "updatedAt": "2026-05-28T14:45:00.000Z"
   },
+
   {
-    patientCode: "BN000004",
-    fullName: "Phạm Thị Hương",
-    dateOfBirth: new Date("1988-02-19"),
-    gender: "FEMALE",
-    phone: "0901000004",
-    address: "Tân Hiệp, An Giang",
-    emergencyContact: {
-      fullName: "Phạm Văn Nam",
-      phone: "0901000104",
-      relationship: "Chồng",
+    "patientCode": "BN000039",
+    "fullName": "Phạm Quốc Huy",
+    "dateOfBirth": "1990-06-10T00:00:00.000Z",
+    "gender": "MALE",
+    "phone": "0918414014",
+    "address": "Rạch Giá, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Phạm Thị Mai",
+      "phone": "0918414114",
+      "relationship": "2"
     },
+    "createdAt": "2026-06-03T09:00:00.000Z",
+    "updatedAt": "2026-06-03T09:00:00.000Z"
   },
   {
-    patientCode: "BN000005",
-    fullName: "Võ Minh Đức",
-    dateOfBirth: new Date("2001-09-14"),
-    gender: "MALE",
-    phone: "0901000005",
-    address: "Vĩnh Long, Việt Nam",
-    emergencyContact: {
-      fullName: "Võ Thị Ngọc",
-      phone: "0901000105",
-      relationship: "Mẹ",
+    "patientCode": "BN000040",
+    "fullName": "Huỳnh Minh Anh",
+    "dateOfBirth": "2004-11-02T00:00:00.000Z",
+    "gender": "FEMALE",
+    "phone": "0918414015",
+    "address": "Rạch Giá, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Huỳnh Văn Nam",
+      "phone": "0918414115",
+      "relationship": "1"
     },
+    "createdAt": "2026-06-09T11:20:00.000Z",
+    "updatedAt": "2026-06-09T11:20:00.000Z"
   },
   {
-    patientCode: "BN000006",
-    fullName: "Nguyễn Thị Ngọc",
-    dateOfBirth: new Date("1995-04-30"),
-    gender: "FEMALE",
-    phone: "0901000006",
-    address: "Cần Thơ, Việt Nam",
-    emergencyContact: {
-      fullName: "Nguyễn Văn Thành",
-      phone: "0901000106",
-      relationship: "Cha",
+    "patientCode": "BN000041",
+    "fullName": "Võ Thanh Tâm",
+    "dateOfBirth": "1987-09-15T00:00:00.000Z",
+    "gender": "MALE",
+    "phone": "0918414016",
+    "address": "Tân Hiệp, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Võ Thị Hạnh",
+      "phone": "0918414116",
+      "relationship": "2"
     },
+    "createdAt": "2026-06-16T13:40:00.000Z",
+    "updatedAt": "2026-06-16T13:40:00.000Z"
   },
   {
-    patientCode: "BN000007",
-    fullName: "Đặng Quốc Huy",
-    dateOfBirth: new Date("1982-06-17"),
-    gender: "MALE",
-    phone: "0901000007",
-    address: "Sóc Trăng, Việt Nam",
-    emergencyContact: {
-      fullName: "Trần Thị Hạnh",
-      phone: "0901000107",
-      relationship: "Vợ",
+    "patientCode": "BN000042",
+    "fullName": "Đặng Thị Kim",
+    "dateOfBirth": "1998-12-21T00:00:00.000Z",
+    "gender": "FEMALE",
+    "phone": "0918414017",
+    "address": "Giồng Riềng, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Đặng Văn Phúc",
+      "phone": "0918414117",
+      "relationship": "1"
     },
+    "createdAt": "2026-06-22T15:10:00.000Z",
+    "updatedAt": "2026-06-22T15:10:00.000Z"
   },
   {
-    patientCode: "BN000008",
-    fullName: "Bùi Thị Thanh",
-    dateOfBirth: new Date("1975-12-03"),
-    gender: "FEMALE",
-    phone: "0901000008",
-    address: "Bạc Liêu, Việt Nam",
-    emergencyContact: {
-      fullName: "Bùi Văn Minh",
-      phone: "0901000108",
-      relationship: "Chồng",
+    "patientCode": "BN000043",
+    "fullName": "Bùi Đức Thành",
+    "dateOfBirth": "1992-05-06T00:00:00.000Z",
+    "gender": "MALE",
+    "phone": "0918414018",
+    "address": "Hòn Đất, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Bùi Thị Trang",
+      "phone": "0918414118",
+      "relationship": "2"
     },
+    "createdAt": "2026-06-28T16:30:00.000Z",
+    "updatedAt": "2026-06-28T16:30:00.000Z"
   },
+
   {
-    patientCode: "BN000009",
-    fullName: "Phan Hoàng Long",
-    dateOfBirth: new Date("1992-08-21"),
-    gender: "MALE",
-    phone: "0901000009",
-    address: "Cà Mau, Việt Nam",
-    emergencyContact: {
-      fullName: "Phan Thị Hồng",
-      phone: "0901000109",
-      relationship: "Mẹ",
+    "patientCode": "BN000044",
+    "fullName": "Ngô Minh Quân",
+    "dateOfBirth": "1995-01-18T00:00:00.000Z",
+    "gender": "MALE",
+    "phone": "0918414019",
+    "address": "Rạch Giá, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Ngô Thị Yến",
+      "phone": "0918414119",
+      "relationship": "2"
     },
+    "createdAt": "2026-07-04T08:45:00.000Z",
+    "updatedAt": "2026-07-04T08:45:00.000Z"
   },
   {
-    patientCode: "BN000010",
-    fullName: "Lý Thị Hoa",
-    dateOfBirth: new Date("1987-01-26"),
-    gender: "FEMALE",
-    phone: "0901000010",
-    address: "Kiên Lương, An Giang",
-    emergencyContact: {
-      fullName: "Lý Văn Sơn",
-      phone: "0901000010",
-      relationship: "Chồng",
+    "patientCode": "BN000045",
+    "fullName": "Đỗ Thị Thanh",
+    "dateOfBirth": "2000-10-11T00:00:00.000Z",
+    "gender": "FEMALE",
+    "phone": "0918414020",
+    "address": "Rạch Giá, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Đỗ Văn Bình",
+      "phone": "0918414120",
+      "relationship": "1"
     },
+    "createdAt": "2026-07-10T10:30:00.000Z",
+    "updatedAt": "2026-07-10T10:30:00.000Z"
   },
   {
-    patientCode: "BN000011",
-    fullName: "Trương Minh Khang",
-    dateOfBirth: new Date("2003-05-11"),
-    gender: "MALE",
-    phone: "0901000011",
-    address: "Hà Tiên, An Giang",
+    "patientCode": "BN000046",
+    "fullName": "Lâm Quốc Việt",
+    "dateOfBirth": "1989-07-23T00:00:00.000Z",
+    "gender": "MALE",
+    "phone": "0918414021",
+    "address": "Châu Thành, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Lâm Thị Hương",
+      "phone": "0918414121",
+      "relationship": "2"
+    },
+    "createdAt": "2026-07-16T13:15:00.000Z",
+    "updatedAt": "2026-07-16T13:15:00.000Z"
   },
   {
-    patientCode: "BN000012",
-    fullName: "Huỳnh Thị Kim",
-    dateOfBirth: new Date("1993-10-05"),
-    gender: "FEMALE",
-    phone: "0901000012",
-    address: "Phú Quốc, An Giang",
+    "patientCode": "BN000047",
+    "fullName": "Mai Thanh Long",
+    "dateOfBirth": "1997-04-29T00:00:00.000Z",
+    "gender": "MALE",
+    "phone": "0918414022",
+    "address": "Rạch Giá, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Mai Thị Hồng",
+      "phone": "0918414122",
+      "relationship": "2"
+    },
+    "createdAt": "2026-07-23T09:50:00.000Z",
+    "updatedAt": "2026-07-23T09:50:00.000Z"
   },
   {
-    patientCode: "BN000013",
-    fullName: "Nguyễn Hoàng Nam",
-    dateOfBirth: new Date("1980-03-22"),
-    gender: "MALE",
-    phone: "0901000013",
-    address: "Châu Đốc, An Giang",
-  },
-  {
-    patientCode: "BN000014",
-    fullName: "Trần Ngọc Anh",
-    dateOfBirth: new Date("1997-07-18"),
-    gender: "FEMALE",
-    phone: "0901000014",
-    address: "Thoại Sơn, An Giang",
-  },
-  {
-    patientCode: "BN000015",
-    fullName: "Đỗ Văn Thành",
-    dateOfBirth: new Date("1972-09-29"),
-    gender: "MALE",
-    phone: "0901000015",
-    address: "Tri Tôn, An Giang",
-  },
-  {
-    patientCode: "BN000016",
-    fullName: "Nguyễn Thị Thu",
-    dateOfBirth: new Date("1989-11-16"),
-    gender: "FEMALE",
-    phone: "0901000016",
-    address: "Tịnh Biên, An Giang",
-  },
-  {
-    patientCode: "BN000017",
-    fullName: "Phạm Minh Quân",
-    dateOfBirth: new Date("1999-02-07"),
-    gender: "MALE",
-    phone: "0901000017",
-    address: "Vị Thanh, Hậu Giang",
-  },
-  {
-    patientCode: "BN000018",
-    fullName: "Lê Thị Phương",
-    dateOfBirth: new Date("1991-06-24"),
-    gender: "FEMALE",
-    phone: "0901000018",
-    address: "Ninh Kiều, Cần Thơ",
-  },
-  {
-    patientCode: "BN000019",
-    fullName: "Võ Văn Khải",
-    dateOfBirth: new Date("1984-04-13"),
-    gender: "MALE",
-    phone: "0901000019",
-    address: "Bình Minh, Vĩnh Long",
-  },
-  {
-    patientCode: "BN000020",
-    fullName: "Nguyễn Minh Châu",
-    dateOfBirth: new Date("2000-12-28"),
-    gender: "FEMALE",
-    phone: "0901000020",
-    address: "Sa Đéc, Đồng Tháp",
-  },
-];
+    "patientCode": "BN000048",
+    "fullName": "Phan Thị Hạnh",
+    "dateOfBirth": "2003-02-08T00:00:00.000Z",
+    "gender": "FEMALE",
+    "phone": "0918414023",
+    "address": "Tân Hiệp, Kiên Giang",
+    "emergencyContact": {
+      "fullName": "Phan Văn Tùng",
+      "phone": "0918414123",
+      "relationship": "1"
+    },
+    "createdAt": "2026-07-29T15:20:00.000Z",
+    "updatedAt": "2026-07-29T15:20:00.000Z"
+  }
+]
 
 const seedPatients = async () => {
   try {
     await connectDatabase();
 
-    await Patient.deleteMany({});
-
     await Patient.insertMany(patients);
 
-    console.log("✅ Seed 20 patients successfully");
+    console.log(`Seed ${patients.length} patients successfully`);
 
     await mongoose.disconnect();
   } catch (error) {

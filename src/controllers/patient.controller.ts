@@ -73,6 +73,7 @@ export const getPatientById = async (
     res.status(500).json({
       success: false,
       message: "Không thể lấy thông tin bệnh nhân",
+      error: error instanceof Error ? error.message : error,
     });
   }
 };

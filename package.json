@@ -6,7 +6,7 @@
     "dev": "nodemon --exec tsx server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "seed:patients": "tsx src/seed/patient.seed.ts"
+    "seed": "tsx src/seed/patient.seed.ts"
   },
   "dependencies": {
     "cors": "^2.8.6",
