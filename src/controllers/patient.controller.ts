@@ -45,6 +45,7 @@ export const getPatients = async (
     res.status(500).json({
       success: false,
       message: "Không thể lấy danh sách bệnh nhân",
+       error: error instanceof Error ? error.message : error,
     });
   }
 };
