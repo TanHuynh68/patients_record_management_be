@@ -1,4 +1,4 @@
-import * as patientService from "../services/patient.service.js";
+import * as patientService from "./patient.service.js";
 export const createPatient = async (req, res) => {
     try {
         const patient = await patientService.createPatient({

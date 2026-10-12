@@ -1,4 +1,4 @@
-import { Patient } from "../models/patient.model.js";
+import { Patient } from "./patient.model.js";
 
 interface CreatePatientData {
   fullName: string;

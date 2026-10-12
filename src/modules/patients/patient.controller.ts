@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import * as patientService from "../services/patient.service.js";
+import * as patientService from "../patients/patient.service.js";
 
 export const createPatient = async (
   req: Request,

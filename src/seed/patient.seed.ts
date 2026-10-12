@@ -2,7 +2,7 @@ import "dotenv/config";
 import mongoose from "mongoose";
 
 import { connectDatabase } from "../config/db.js";
-import { Patient } from "../models/patient.model.js";
+import { Patient } from "../modules/patients/patient.model.js";
 
 const patients = [
   {

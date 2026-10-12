@@ -2,9 +2,10 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
-
-import patientRouter from "./routes/index.js";
+import "dotenv/config";
+import patientRouter from "./routes/patients.route.js";
 import { connectDatabase } from "./config/db.js";
+import authRouter from "./routes/auth.route.js";
 
 const app = express();
 
@@ -19,8 +20,9 @@ app.get("/api/v1/health", (_req, res) => {
     message: "Server is running",
   });
 });
-
+app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/patients", patientRouter);
+
 
 await connectDatabase();
 app.listen(9000, () => {

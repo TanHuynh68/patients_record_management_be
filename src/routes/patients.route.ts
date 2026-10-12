@@ -6,10 +6,10 @@ import {
   getPatientById,
   updatePatient,
   deletePatient,
-} from "../controllers/patient.controller.js";
+} from "../modules/patients/patient.controller.js";
 
 const router = Router();
-
+//patients
 router.post("/", createPatient);
 
 router.get("/", getPatients);
