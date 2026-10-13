@@ -6,6 +6,7 @@ import "dotenv/config";
 import patientRouter from "./routes/patients.route.js";
 import { connectDatabase } from "./config/db.js";
 import authRouter from "./routes/auth.route.js";
+import userRoute from "./modules/users/user.route.js";
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.get("/api/v1/health", (_req, res) => {
 });
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/patients", patientRouter);
+app.use("/api/v1/admin/manage-doctors", userRoute);
 
 
 await connectDatabase();

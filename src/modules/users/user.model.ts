@@ -10,12 +10,35 @@ export enum UserStatus {
   BANNED = "BANNED",
 }
 
+export interface PatientPermissions {
+  create: boolean;
+  read: boolean;
+  update: boolean;
+  delete: boolean;
+}
+
+const patientPermissionsSchema = new Schema<PatientPermissions>(
+  {
+    create: { type: Boolean, default: false },
+    read: { type: Boolean, default: true },
+    update: { type: Boolean, default: false },
+    delete: { type: Boolean, default: false },
+  },
+  { _id: false },
+);
+
 const userSchema = new Schema(
   {
     fullName: {
       type: String,
       required: true,
       trim: true,
+    },
+    permissions: {
+      patients: {
+        type: patientPermissionsSchema,
+        default: () => ({}),
+      },
     },
     email: {
       type: String,
