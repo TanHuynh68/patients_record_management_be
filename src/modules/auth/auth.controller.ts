@@ -13,8 +13,9 @@ if (!JWT_SECRET) {
 }
 
 export async function login(req: Request, res: Response) {
-  const { email, password } = req.body;
-
+  try {
+    const { email, password } = req.body;
+console.log('password: ', password)
   const user = await User.findOne({ email }).select("+password");
 
   if (!user) {
@@ -22,9 +23,10 @@ export async function login(req: Request, res: Response) {
       message: "Không tìm thấy người dùng",
     });
   }
-
+  console.log('password: ', password)
+  console.log('user.password: ', user.password)
   const isPasswordValid = await bcrypt.compare(password, user.password);
-
+  console.log('isPasswordValid: ', isPasswordValid)
   if (!isPasswordValid) {
     return res.status(400).json({
       message: "Sai mật khẩu",
@@ -55,6 +57,7 @@ export async function login(req: Request, res: Response) {
     accessToken: token,
     tokenType: "Bearer",
     expiresIn: JWT_EXPIRES_IN,
+    message: 'Đăng nhập thành công',
     user: {
       id: user._id.toString(),
       fullName: user.fullName,
@@ -62,4 +65,8 @@ export async function login(req: Request, res: Response) {
       role: user.role,
     },
   });
+  } catch (error) {
+    console.log('error:', error)
+    return error
+  }
 }

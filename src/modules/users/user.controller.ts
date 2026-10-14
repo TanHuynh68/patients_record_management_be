@@ -272,13 +272,13 @@ export async function updateDoctorController(
     if (!doctor) {
       return res.status(404).json({
         success: false,
-        message: "Không tìm thấy Doctor",
+        message: "Không tìm thấy bác sĩ",
       });
     }
 
     return res.status(200).json({
       success: true,
-      message: "Cập nhật Doctor thành công",
+      message: "Cập nhật bác sĩ thành công",
       data: doctor,
     });
   } catch (error: unknown) {
