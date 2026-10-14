@@ -4,7 +4,7 @@ import { User, UserStatus } from "../users/user.model.js";
 import type { Request, Response } from "express";
 
 const JWT_SECRET: string = process.env.JWT_SECRET || "";
-console.log("JWT_SECRET: ", JWT_SECRET);
+
 const JWT_EXPIRES_IN: NonNullable<SignOptions["expiresIn"]> = (process.env
   .JWT_EXPIRES_IN || "1h") as NonNullable<SignOptions["expiresIn"]>;
 
