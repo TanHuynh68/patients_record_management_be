@@ -10,13 +10,13 @@ export const createPatient = async (
       ...req.body,
       dateOfBirth: new Date(req.body.dateOfBirth),
     });
-
     res.status(201).json({
       success: true,
       message: "Tạo bệnh nhân thành công",
       data: patient,
     });
   } catch (error) {
+    console.log('error: ', error)
     res.status(500).json({
       success: false,
       message: "Không thể tạo bệnh nhân",
@@ -36,7 +36,6 @@ export const getPatients = async (
 
     const patients =
       await patientService.getPatients(keyword);
-    console.log("p: ", patients)
     res.json({
       success: true,
       data: patients,

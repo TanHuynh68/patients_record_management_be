@@ -14,11 +14,17 @@ interface CreatePatientData {
 }
 
 const generatePatientCode = async (): Promise<string> => {
-  const count = await Patient.countDocuments();
+  let patientCode: string;
+  let exists: boolean;
 
-  const number = String(count + 1).padStart(6, "0");
+  do {
+    const number = Math.floor(100000 + Math.random() * 900000);
+    patientCode = `BN${number}`;
 
-  return `BN${number}`;
+    exists = !!(await Patient.exists({ patientCode }));
+  } while (exists);
+
+  return patientCode;
 };
 
 export const createPatient = async (
